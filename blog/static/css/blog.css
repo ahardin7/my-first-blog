@@ -1,0 +1,97 @@
+/*h1 a, h2 a {
+    color: #000000;
+    opacity: 0.9;
+    font-family: 'Lobster';
+}
+*/
+
+body {
+    /*padding-left: 15px; */
+    
+    background: url("https://c1.staticflickr.com/5/4046/5123537264_00b49c49c4_b.jpg") center no-repeat;
+    background-size: cover;
+    background-color: rgba(000, 000, 000, 0.8);
+
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+
+}
+#bg-fade {
+    content: “”;
+    background-color: #000000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*
+.page-header {
+    background-color: #000000;
+    opacity: 0.5;
+    
+    margin-top: 0;
+    padding: 10px 10px 10px 110px; 
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+*/
+.content {
+    margin: 100px auto 0;
+    background-color: rgba(000, 000, 000, 0.1);
+    border: 1px solid white;
+    min-height: 300px;
+    max-width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myName {
+    font-size: 1.5em;
+}
+
+.divLine {
+    margin-top: -50px;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+
+.subtext {
+
+    font-size: 26;
+}
