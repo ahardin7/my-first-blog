@@ -1,0 +1,34 @@
+{% load static %}
+
+<head>
+    <title>Abby's blog</title>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+</head>
+<body>
+    <div id="bg-fade"></div>
+        <!--<div class="page-header">
+            <h1 align="right"><a href="/"></a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    -->
+    <div class="content container">
+        <h1 class="myName">Abby Ruminas</h1>
+        <p class="subtext">Developer</p>
+        <p class="divLine">___</p>
+        <div>
+            <a class="btn btn-outline-light" href="{% static 'AbbyRuminasResume.pdf' %}"> Resume</a>
+            <a class="btn btn-outline-light" href="/About Me">About Me</a>
+        </div>            
+    </div>
+    </body>
+</html>
