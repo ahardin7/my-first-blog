@@ -8,7 +8,7 @@
 body {
     /*padding-left: 15px; */
     
-    background: url("https://c1.staticflickr.com/5/4046/5123537264_00b49c49c4_b.jpg") center no-repeat;
+    background: url("clevelandimage.jpeg") center no-repeat; /*https://c1.staticflickr.com/5/4046/5123537264_00b49c49c4_b.jpg */
     background-size: cover;
     background-color: rgba(000, 000, 000, 0.8);
 
@@ -46,7 +46,7 @@ body {
 */
 .content {
     margin: 100px auto 0;
-    background-color: rgba(000, 000, 000, 0.1);
+    background-color: rgba(000, 000, 000, 0.3);
     border: 1px solid white;
     min-height: 300px;
     max-width: 50%;
