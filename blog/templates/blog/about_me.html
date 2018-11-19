@@ -1,5 +1,67 @@
 {% extends 'blog/base.html' %}
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+
+{% block style %}
+<style>
+ .content{
+    background-color: rgba(000, 000, 000, 0.8);
+    width: 80vw;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-height: 200px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+.aboutRow {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.aboutRow > p {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+</style>
+{% endblock %}
+
+{% load static %}
 
 {% block content %}
+
+    <h1>Abby Ruminas</h1>
+
+    <div>
+        <a class="btn btn-outline-light" href="/">Home</a>
+        <a class="btn btn-outline-light" href="{% static 'AbbyRuminasResume.pdf' %}"> Resume</a>
+        <a class="btn btn-outline-light" href="/proj_list">Projects</a>
+    </div>    
+
+    <div class="aboutRow">
+        <p> Hello, and welcome to my website! I am a Tech Elevator student at the Cleveland campus in the Java cohort. I'll be graduating on December 21st 2018. I'm extremely excited to embark on this lifelong career in programming.
+             I decided to take a leap of faith and go to Tech Elevator after graduating with my BS degree in Public Health and finding that I wasn't quite satisfied stopping there. I decided to take some online courses through Udacity in both Computer Science and SQL for Data Analysis.
+              After taking the courses I found that I was hooked and I really wanted to learn more and become proficient in programming. I had never thought it was an option for me until I took the Udacity courses and really researched the field. The more I know, the more it feels like being a member of a really elusive club and it's just so exciting to be a part of this field.
+        </p>
+        <img src="{% static 'IMG_1529.png' %}" alt="AbbyPic">
+    </div>
+
+    <div class="aboutRow">
+        <img src="{% static 'IMG_0675.JPG' %}" alt="MuffinPic">
+        <p> So a little about me personally.. I love Lakewood!! I've always lived in NE Ohio and I've really found my home in Lakewood. I'm a proud cat parent to a sweet little cherub named Muffin.
+            I'm a biking enthusiast and I adore the Tow Path and I'm out biking every weekend when the seasons permit. As far as media goes I absolutely adore Sci-Fi movies books, and shows. Although, I don't usually enjoy Sci-Fis involving space, I just really like speculative and imaginative content. Some of my favorite movies and shows are: Upstream Color, Under the Skin, Black Mirror, and Atlanta
+        </p>
+    </div>
     
-{% endblock %}
+    {% endblock %}

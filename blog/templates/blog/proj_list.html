@@ -1,0 +1,57 @@
+{% extends 'blog/base.html' %}
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+
+{% block style %}
+<style>
+ .content{
+    background-color: rgba(000, 000, 000, 0.8);
+    width: 80vw;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+</style>
+{% endblock %}
+
+{% load static %}
+
+{% block content %} 
+
+<h1>Abby Ruminas</h1>
+
+    <div>
+        <a class="btn btn-outline-light" href="/">Home</a>
+        <a class="btn btn-outline-light" href="{% static 'AbbyRuminasResume.pdf' %}"> Resume</a>
+        <a class="btn btn-outline-light" href="/about_me">About Me</a>
+    </div> 
+
+
+    <h2></h2>
+
+    <p><b><i>Java</i></b> - The majority of my time at Tech Elevator has focused on Java. Starting with Java fundamentals and going on to unit testing, exception handling, JSP, JDBC, and MVC. I've completed capstone projects utilizing these concepts to gain a better understanding of them. Starting with the vending machine application which was a command line application that utilized inheritance to extend previously written methods to subclasses. The National Parks Reservation capstone used DAOs and JDBC to pull and post data from PostgreSQL. The National Parks Website was created using Spring Web MVC, JSP, and sessions. </p>
+
+    <p><b><i>Python</i></b>  - This website was made with Python, Django and some Bootstrap. I used a tutorial to create about 50% of this website. It was initially meant to be a blog but I decided I wanted to make a static website to suit my needs but also take a step off the beaten path and figure things out on my own. I also know some Python fundamentals from a Computer Science course I took on Udacity.</p>
+
+    <p><b><i>SQL</i></b> - I took a course on SQL for Data Analytics on Udacity. It covered the basics, joins, subqueries, data cleaning and windows functions. Additionally, Tech Elevator also covered SQL, so I feel pretty confident in what I know about SQL. </p>
+
+
+
+    {% for proj in projects %}
+        <div class="project">
+            <h1><a href="{% url 'proj_detail' pk=post.pk %}">{{ proj.title }}</a></h1>
+            <p>{{ proj.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <h1 class="myName">Abby Ruminas</h1>
+    <p class="subtext">Developer</p>
+    <p class="divLine">___</p>
+
+    <div>
+        <a class="btn btn-outline-light" href="{% static 'AbbyRuminasResume.pdf' %}"> Resume</a>
+        <a class="btn btn-outline-light" href="/about_me">About Me</a>
+        <a class="btn btn-outline-light" href="/proj_list">Projects</a>
+    </div>     
+
+{% endblock %}
